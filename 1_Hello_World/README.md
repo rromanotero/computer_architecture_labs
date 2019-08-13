@@ -55,7 +55,7 @@ qemu-system-aarch64 -M raspi3 -kernel .\1_Hello_World\output\kernel8.img -serial
 What is white and can't climb a tree?
 ```
 ##### PI 3
-You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [https://www.putty.org/](PuTTY), and a means to power the PI.
+You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), (PuTTY)[https://www.putty.org/], and a means to power the PI.
 
 1. Get an SDCard with [https://www.raspberrypi.org/downloads/raspbian/](Raspbian Buster Lite) installed on it (see [installation instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md))
 2. replace **kernel8.img in the boot partition of the SDCard** (you'll see it when reading the PI's SDCard from a laptop) with ./output/kernel8.img.
