@@ -61,7 +61,7 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 2. Insert the SDCard on a latop and replace **kernel8.img in the boot partition of the SDCard** with **./output/kernel8.img**. Delete all other kernel.img, kernel7.img and similars.
 
 <p align="center">
-<img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/boot_partition.png" width="420"/>
+<img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/boot_partition.png" width="260"/>
 </p>
 
 3. Insert back the SD Card onto the PI
@@ -75,7 +75,7 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 6. Access the PI from a serial terminal (Adafruit has [instructions for this](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well). Make sure to select the right COM port on windows or TTY port on Mac:
 
 <p align="center">
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="200"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="260"/>
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
 </p>
 
