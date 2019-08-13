@@ -65,14 +65,14 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 </p>
 
 3. Insert back the SD Card onto the PI
-4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they have [a tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-mac))
+4. Install the USB to UART converter drivers (if you're using the one from Adafruit, [they have a tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-mac))
 5. Plug the PI's UART to yout laptop via the converter (check [Adafruit instructions](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/connect-the-lead)):   
 
 <p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.png" width="420"/>
 </p>
 
-6. Access the PI from a serial terminal such as PuTTY for Windows (Adafruit also has [instructions for this]):(https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well. Make sure to select the right COM port on windows or TTY port on Mac:
+6. Access the PI from a serial terminal such as PuTTY for Windows (Adafruit has [instructions for this](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well. Make sure to select the right COM port on windows or TTY port on Mac:
 
 <p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.jpg" width="200"/>
