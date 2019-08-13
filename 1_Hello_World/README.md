@@ -66,16 +66,16 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 
 3. Insert back the SD Card onto the PI
 4. Install the USB to UART converter drivers (if you're using the one from Adafruit, [they have a tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-mac))
-5. Plug the PI's UART to yout laptop via the converter (check [Adafruit instructions](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/connect-the-lead)):   
+5. Plug the PI's UART to yout laptop via the converter (check the same Adafruit tutorial):   
 
 <p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.jpg" width="220"/>
 </p>
 
-6. Access the PI from a serial terminal (Adafruit has [instructions for this](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well). Make sure to select the right COM port on windows or TTY port on Mac:
+6. Access the PI from a serial terminal (check the same Adafruit tutorial). Make sure to select the right COM port on windows or TTY port on Mac:
 
 <p align="center">
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="260"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="380"/>
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
 </p>
 
