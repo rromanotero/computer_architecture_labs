@@ -16,6 +16,7 @@ All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-syst
 ## Bare-metal Raspberry PI 3 Resources ( We'll be building on these )
 - [Application note. Bare-metal Boot Code for ARMv8-A Processors](http://infocenter.arm.com/help/topic/com.arm.doc.dai0527a/DAI0527A_baremetal_boot_code_for_ARMv8_A_processors.pdf)
 - [MiniOS](https://github.com/rromanotero/minios)
+- [Sergey Matyukevich's Raspberry PI OS](https://github.com/s-matyukevich/raspberry-pi-os/)
 - [Leon de Boer's Bare Metal Examples](https://github.com/LdB-ECM/Raspberry-Pi/)
 - [Zoltan Baldaszti's PI3's Tutorial](https://github.com/bztsrc/raspi3-tutorial)
 - [PeterLemon's Bare Metal Assembly  for PI 3](https://github.com/PeterLemon/RaspberryPi)
