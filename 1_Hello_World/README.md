@@ -1,11 +1,12 @@
 # 1. Hello World
 
 ### Compile Windows
+#### ( Docker Windows requires the FULL PATH of the HOST directory to bind mount)
 ```bash
 git clone https://github.com/rromanotero/computer_architecture_labs.git
 cd computer_architecture_labs
 docker run `
-       -v C:\...\1_Hello_World:/src `  <<<---- Docker Windows requires the FULL PATH of the HOST directory 
+       -v C:\...\1_Hello_World:/src `
        rromanotero/aarch64 `
        bash -c "cd src && make"
 ```       
