@@ -61,7 +61,7 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 2. Insert the SDCard on a latop and replace **kernel8.img in the boot partition of the SDCard** with **./output/kernel8.img**. Delete all other kernel.img, kernel7.img and similars.
 
 <p align="center">
-<img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/boot_partition.png" width="420"/>
+<img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/boot_partition.png" width="220"/>
 </p>
 
 3. Insert back the SD Card onto the PI
@@ -69,13 +69,13 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 5. Plug the PI's UART to yout laptop via the converter (check [Adafruit instructions](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/connect-the-lead)):   
 
 <p align="center">
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="420"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.png" width="420"/>
 </p>
 
-6. Access the PI from a serial terminal (e.g. PuTTY for Windows). Adafruit have [instructions for this](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well. Make sure to select the right COM port on windows or TTY port on Mac:
+6. Access the PI from a serial terminal such as PuTTY for Windows (Adafruit also has [instructions for this]):(https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well. Make sure to select the right COM port on windows or TTY port on Mac:
 
 <p align="center">
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.jpg" width="200"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.jpg" width="200"/>
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
 </p>
 
