@@ -55,18 +55,29 @@ qemu-system-aarch64 -M raspi3 -kernel .\1_Hello_World\output\kernel8.img -serial
 What is white and can't climb a tree?
 ```
 ##### PI 3
-You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [PuTTY](https://www.putty.org/), and a means to power the PI.
+You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), a serial terminal (For Windows use [PuTTY](https://www.putty.org/)), and a means to power the PI.
 
 1. Get an SDCard with [Raspbian Buster Lite](https://www.raspberrypi.org/downloads/raspbian/) installed on it (see [installation instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md))
-2. replace **kernel8.img in the boot partition of the SDCard** (you'll see it when reading the PI's SDCard from a laptop) with ./output/kernel8.img.
-3. Insert back the SD Card onto the PI
-4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they also have a tutorial on how to install drivers)
-5. Plug the PI's UART to yout laptop (via the converter), and access the PI from PuTTY:
+2. Insert the SDCard on a latop and replace **kernel8.img in the boot partition of the SDCard** with **./output/kernel8.img**. Delete all other kernel.img, kernel7.img and similars.
 
+<p align="center">
+<img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/boot_partition.png" width="420"/>
+</p>
+
+3. Insert back the SD Card onto the PI
+4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they have [a tutorial](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/software-installation-mac))
+5. Plug the PI's UART to yout laptop via the converter (check [Adafruit instructions](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/connect-the-lead)):   
+
+<p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="420"/>
+</p>
+
+6. Access the PI from a serial terminal (e.g. PuTTY for Windows). Adafruit have [instructions for this](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/test-and-configure) as well. Make sure to select the right COM port on windows or TTY port on Mac:
+
+<p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.jpg" width="200"/>
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
-
+</p>
 
 
 
