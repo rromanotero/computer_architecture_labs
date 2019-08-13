@@ -11,6 +11,7 @@
 2. Print to UART1 an answer to the following questions (in your own words): 
     - What does "bare-metal program" mean?
     - What is the GNU toolchain?
+    - What is a Makefile and how do you run it?
     - What is UART is used for ? 
     - How many UARTs does the PI 3 have?
     - What's the UART's baud rate used on this demo (see uart.c) ?
