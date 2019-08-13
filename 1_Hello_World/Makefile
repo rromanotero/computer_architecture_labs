@@ -25,7 +25,7 @@ OBJDUMP=aarch64-elf-objdump
 ELF=kernel8.elf
 IMAGE=kernel8.img
 
-CFLAGS = -mcpu=cortex-a53 -Wall -O0 -ffreestanding -nostdlib -nostartfiles
+CFLAGS = -mcpu=cortex-a53 -O0 -ffreestanding -nostdlib -nostartfiles
 
 OUTPUT := output
 SRC_C := $(wildcard src/*.c)
