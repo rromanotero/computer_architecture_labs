@@ -3,13 +3,17 @@
 ### Compile Windows
 ### (must provide full path of Host directory)
 ```bash
+git clone https://github.com/rromanotero/computer_architecture_labs.git
+cd computer_architecture_labs
 docker run `
-       -v C:\...\1_Hello_World:/src `
+       -v C:\...\1_Hello_World:/src `    <<<--- NOTE that in Windows Docker requires the FULL PATH of the host directory for bind mounting
        rromanotero/aarch64 `
        bash -c "cd src && make"
 ```       
 ### Compile Linux/Mac
 ```bash
+git clone https://github.com/rromanotero/computer_architecture_labs.git
+cd computer_architecture_labs
 docker run \
        -v ./1_Hello_World:/src \
        rromanotero/aarch64 \
