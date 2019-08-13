@@ -6,7 +6,7 @@
 git clone https://github.com/rromanotero/computer_architecture_labs.git
 cd computer_architecture_labs
 docker run `
-       -v C:\...\1_Hello_World:/src `    <<<--- NOTE that in Windows Docker requires the FULL PATH of the host directory for bind mounting
+       -v C:\...\1_Hello_World:/src `    <<<--- Docker Windows requires the FULL PATH of the host directory
        rromanotero/aarch64 `
        bash -c "cd src && make"
 ```       
