@@ -1,7 +1,6 @@
 # 1. Hello World
 
 ### Compile Windows
-### (must provide full path of Host directory)
 ```bash
 git clone https://github.com/rromanotero/computer_architecture_labs.git
 cd computer_architecture_labs
