@@ -20,7 +20,11 @@ docker run \
 ```
 
 ### Run
+#### QEMU
 ```bash
 qemu-system-aarch64 -M raspi3 -kernel .\1_Hello_World\output\kernel8.img -serial null -serial stdio
 What is white and can't climb a tree?
 ```
+
+#### PI 3
+For testing with the PI3 replace **kernel8.img in the boot partition** (you'll see it when reading the PI's SDCard from a laptop) with ./output/kernel8.img.
