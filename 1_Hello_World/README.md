@@ -12,7 +12,7 @@
     - What does "bare-metal program" mean?
     - What is the GNU toolchain?
     - What is a Makefile and how do you run it?
-    - What is UART is used for ? 
+    - What is the use of a UART peripheral? 
     - How many UARTs does the PI 3 have?
     - What's the UART's baud rate used on this demo (see uart.c) ?
     - Why printing to the UART1 gets printed to the terminal when running the Lab on QEMU ?
