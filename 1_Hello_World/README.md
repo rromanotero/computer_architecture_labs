@@ -76,7 +76,7 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 
 <p align="center">
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="380"/>
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="320"/>
 </p>
 
 
