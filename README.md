@@ -17,7 +17,7 @@ I've created an image with the aarch64-toolchain. All labs use it. To get it:
 docker pull rromanotero/aarch64
 ```
 
-### Compiling this Lab on Windows
+## Compiling this Lab on Windows
 ##### ( Docker Windows requires the FULL PATH TO THE LAB FOLDER to bind mount it)
 ```bash
 git clone https://github.com/rromanotero/computer_architecture_labs.git
@@ -28,7 +28,7 @@ docker run `
        bash -c "cd src && make"
 ```   
 
-### Compiling this Lab on Linux/Mac
+## Compiling this Lab on Linux/Mac
 ```bash
 git clone https://github.com/rromanotero/computer_architecture_labs.git
 cd computer_architecture_labs
@@ -40,11 +40,11 @@ docker run \
 
 ## Running Labs in QEMU
 
-All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-system-aarch64) and a Raspberry PI 3 Model A+. The boot files are the ones from the [Raspbian Buster Lite image](https://www.raspberrypi.org/downloads/raspbian/).
+All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-system-aarch64) and a Raspberry PI 3 Model A+.
 
 ## Running Labs in a PI 3
 
-You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [PuTTY](https://www.putty.org/), and a means to power the PI.
+You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [PuTTY](https://www.putty.org/), and the boot files from [Raspbian Buster Lite image](https://www.raspberrypi.org/downloads/raspbian/).
 
 1. Get an SDCard with [Raspbian Buster Lite](https://www.raspberrypi.org/downloads/raspbian/) installed on it (see [installation instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md))
 2. replace **kernel8.img in the boot partition of the SDCard** (you'll see it when reading the PI's SDCard from a laptop) with ./output/kernel8.img.
