@@ -7,17 +7,50 @@ I've created an image with the aarch64-toolchain. All labs use it. To get it:
 ```bash
 docker pull rromanotero/aarch64
 ```
+
+### Compiling this Lab on Windows
+##### ( Docker Windows requires the FULL PATH TO THE LAB FOLDER to bind mount it)
+```bash
+git clone https://github.com/rromanotero/computer_architecture_labs.git
+cd computer_architecture_labs
+docker run `
+       -v C:\...\LAB_FOLDER:/src `
+       rromanotero/aarch64 `
+       bash -c "cd src && make"
+```   
+
+### Compiling this Lab on Linux/Mac
+```bash
+git clone https://github.com/rromanotero/computer_architecture_labs.git
+cd computer_architecture_labs
+docker run \
+       -v ./LAB_FOLDER:/src \
+       rromanotero/aarch64 \
+       bash -c "cd src && make"
+```
+
 ## Running Labs
 
 All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-system-aarch64) and a Raspberry PI 3 Model A+. The boot files are the ones from the [Raspbian Buster Lite image](https://www.raspberrypi.org/downloads/raspbian/).
 
-**Labs and Instructions appear on every Lab folder** .
+You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [PuTTY](https://www.putty.org/), and a means to power the PI.
 
-## Bare-metal Raspberry PI 3 Resources ( We'll be building on these )
-- [Application note. Bare-metal Boot Code for ARMv8-A Processors](http://infocenter.arm.com/help/topic/com.arm.doc.dai0527a/DAI0527A_baremetal_boot_code_for_ARMv8_A_processors.pdf)
-- [MiniOS](https://github.com/rromanotero/minios)
-- [Sergey Matyukevich's Raspberry PI OS](https://github.com/s-matyukevich/raspberry-pi-os/)
-- [Leon de Boer's Bare Metal Examples](https://github.com/LdB-ECM/Raspberry-Pi/)
-- [Zoltan Baldaszti's PI3's Tutorial](https://github.com/bztsrc/raspi3-tutorial)
-- [PeterLemon's Bare Metal Assembly  for PI 3](https://github.com/PeterLemon/RaspberryPi)
-- [Maciej Muszkowski's No OS Bootstrap](https://github.com/mmuszkow/NoOsBootstrap/)
+1. Get an SDCard with [Raspbian Buster Lite](https://www.raspberrypi.org/downloads/raspbian/) installed on it (see [installation instructions](https://www.raspberrypi.org/documentation/installation/installing-images/README.md))
+2. replace **kernel8.img in the boot partition of the SDCard** (you'll see it when reading the PI's SDCard from a laptop) with ./output/kernel8.img.
+3. Insert back the SD Card onto the PI
+4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they also have a tutorial on how to install drivers)
+5. Plug the PI's UART to yout laptop (via the converter), and access the PI from PuTTY:
+
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_b.png" width="420"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_setup_a.jpg" width="200"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab_running.png" width="290"/>
+
+
+  ## Bare-metal Raspberry PI 3 Resources ( We'll be building on these )
+  - [Application note. Bare-metal Boot Code for ARMv8-A Processors](http://infocenter.arm.com/help/topic/com.arm.doc.dai0527a/DAI0527A_baremetal_boot_code_for_ARMv8_A_processors.pdf)
+  - [MiniOS](https://github.com/rromanotero/minios)
+  - [Sergey Matyukevich's Raspberry PI OS](https://github.com/s-matyukevich/raspberry-pi-os/)
+  - [Leon de Boer's Bare Metal Examples](https://github.com/LdB-ECM/Raspberry-Pi/)
+  - [Zoltan Baldaszti's PI3's Tutorial](https://github.com/bztsrc/raspi3-tutorial)
+  - [PeterLemon's Bare Metal Assembly  for PI 3](https://github.com/PeterLemon/RaspberryPi)
+  - [Maciej Muszkowski's No OS Bootstrap](https://github.com/mmuszkow/NoOsBootstrap/)
