@@ -15,7 +15,8 @@ Upon completion of this lab, the student shall be able to:
    - \_bitwise_two_power_nth_64_bits
 
 ### Deliverables
-1. A screenshot of the output from running your solution to this lab
+1. A screenshot of the output from running your solution
+2. bitwise.s
 
 
 ### Resources on the WEB
