@@ -41,9 +41,9 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they also have a tutorial on how to install drivers)
 5. Plug the PI's UART to yout laptop (via the converter), and access the PI from PuTTY:
 
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_b.png" width="420"/>
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_a.jpg" width="200"/>
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab1_solution.png" width="290"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_b.png" width="480"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_a.jpg" width="240"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab1_solution.png" width="320"/>
 
 
   ## Bare-metal Raspberry PI 3 Resources ( We'll be building on these )
