@@ -14,7 +14,7 @@ Upon completion of this lab, the student shall be able to:
    - \_bitwise_repeat_byte_64_bits
    - \_bitwise_swap_endianness_64_bits   
    - \_bitwise_two_power_nth_64_bits
-    
+
     Hint: Use LSL, CLZ, REV32, and BFI.
 
 ### Deliverables
