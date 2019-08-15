@@ -9,10 +9,13 @@ Upon completion of this lab, the student shall be able to:
 
 ### Tasks
 1. (10 pts) Write the following assembly routines:
+   (src/bitwise.s contains empty subroutines)
    - \_bitwise_count_leading_zeroes_binary_64_bits
    - \_bitwise_repeat_byte_64_bits
    - \_bitwise_swap_endianness_64_bits   
    - \_bitwise_two_power_nth_64_bits
+    
+    Hint: Use LSL, CLZ, REV32, and BFI.
 
 ### Deliverables
 1. A screenshot of the output from running your solution to this lab
