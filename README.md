@@ -29,9 +29,11 @@ docker run \
        bash -c "cd src && make"
 ```
 
-## Running Labs
+## Running Labs in QEMU
 
 All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-system-aarch64) and a Raspberry PI 3 Model A+. The boot files are the ones from the [Raspbian Buster Lite image](https://www.raspberrypi.org/downloads/raspbian/).
+
+## Running Labs in a PI 3
 
 You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.adafruit.com/product/954), [PuTTY](https://www.putty.org/), and a means to power the PI.
 
@@ -41,10 +43,8 @@ You'll need a Raspberry PI 3 MOdel A+, a [USB to UART converter](https://www.ada
 4. Install the USB to UART converter drivers (if you're using the one from Adafruit, they also have a tutorial on how to install drivers)
 5. Plug the PI's UART to yout laptop (via the converter), and access the PI from PuTTY:
 
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_b.png" width="480"/>
   <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_a.jpg" width="240"/>
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/1_Hello_World/images/lab1_solution.png" width="320"/>
-
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/images/lab_setup_b.png" width="480"/>
 
   ## Bare-metal Raspberry PI 3 Resources ( We'll be building on these )
   - [Application note. Bare-metal Boot Code for ARMv8-A Processors](http://infocenter.arm.com/help/topic/com.arm.doc.dai0527a/DAI0527A_baremetal_boot_code_for_ARMv8_A_processors.pdf)
