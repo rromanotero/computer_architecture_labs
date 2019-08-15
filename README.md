@@ -42,7 +42,7 @@ docker run \
 
 All labs have been tested with [QEMU](https://www.qemu.org/download/).
 
-**The exact command for every lab is on it's README**
+**The exact command for every lab is on its README**
 
 ## Running Labs in a PI 3
 
