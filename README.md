@@ -40,7 +40,19 @@ docker run \
 
 ## Running Labs in QEMU
 
-All labs have been tested with [QEMU](https://www.qemu.org/download/) (qemu-system-aarch64) and a Raspberry PI 3 Model A+.
+All labs have been tested with [QEMU](https://www.qemu.org/download/). The format is
+
+#### Windows
+```bash
+qemu-system-aarch64 -M raspi3 -kernel .\LAB_DIRECTORY\output kernel8.img POSSIBLY_MORE_PARAMS_HERE
+```
+
+#### Linux
+```bash
+qemu-system-aarch64 -M raspi3 -kernel ./LAB_DIRECTORY/output kernel8.img POSSIBLY_MORE_PARAMS_HERE
+```
+
+**The exact command for every lab is on it's README**
 
 ## Running Labs in a PI 3
 
