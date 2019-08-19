@@ -18,13 +18,12 @@ Upon completion of this lab, the student shall be able to:
     Hint: Use LSL, CLZ, REV32, and BFI.
 
 ### Deliverables
-1. A screenshot of the output from running your solution
+1. A screenshot of the output from running your solution (matching the output from the solution sample below)
 2. bitwise.s
 
 
 ### Resources on the WEB
 - (Section 2.5 and 2.6) [The A64 Instruction Set](https://static.docs.arm.com/100898/0100/the_a64_Instruction_set_100898_0100.pdf)
-- [Thumb-2 Instruction Set](http://infocenter.arm.com/help/topic/com.arm.doc.qrc0001m/QRC0001_UAL.pdf)
 - [Endianness](https://en.wikipedia.org/wiki/Endianness)
 - [Endian representation of 64-bit values](https://stackoverflow.com/questions/21478765/endian-representation-of-64-bit-values)
 
