@@ -8,11 +8,9 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/arithmetic.s contains empty subroutines)
-1. (4 pts) Write the assembly routine \_arithmetic_gcd that prints the
-   gdc of two integers m and n
+1. (4 pts) Write the assembly routine \_arithmetic_gcd
 2. (2 pts) Go through the disassembly of \_arithmetic_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight the instruction's opcode.
-3. (4 pts) Write the assembly routine \_arithmetic_print_collatz_sequence that prints the
-   [Collatz sequence](http://mathworld.wolfram.com/CollatzProblem.html) of a number n
+3. (4 pts) Write the assembly routine \_arithmetic_print_collatz_sequence. See [Collatz sequence algorithm here](http://mathworld.wolfram.com/CollatzProblem.html).
 
 HINT:
 To print the Collatz sequence from assembly itself use:
@@ -56,13 +54,11 @@ _print_collatz:
 - [ARM Architecture Reference Manual](https://static.docs.arm.com/ddi0487/ea/DDI0487E_a_armv8_arm.pdf?_ga=2.204759571.2043138464.1566012116-96909423.1563002005)
 
 
-
 ### Solution sample for this Lab
 ##### QEMU
 ```bash
 qemu-system-aarch64 -M raspi3 -k
 ernel .\7_ISA\output\kernel8.img -serial null -serial stdio
-
 GCD(930,180):
 000000000000001E
 
@@ -77,4 +73,4 @@ Collatz Sequence for 21:
 0000000000000001
 ```
 ##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/7_ISA/images/lab7_solution.png" width="400"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/7_ISA/images/lab7_solution.png" width="340"/>
