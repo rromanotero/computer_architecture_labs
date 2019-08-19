@@ -73,4 +73,4 @@ Collatz Sequence for 21:
 0000000000000001
 ```
 ##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/7_ISA/images/lab7_solution.png" width="340"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/7_ISA/images/lab7_solution.png" width="300"/>
