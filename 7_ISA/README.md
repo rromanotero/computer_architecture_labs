@@ -57,8 +57,7 @@ _print_collatz:
 ### Solution sample for this Lab
 ##### QEMU
 ```bash
-qemu-system-aarch64 -M raspi3 -k
-ernel .\7_ISA\output\kernel8.img -serial null -serial stdio
+qemu-system-aarch64 -M raspi3 -kernel .\7_ISA\output\kernel8.img -serial null -serial stdio
 GCD(930,180):
 000000000000001E
 
