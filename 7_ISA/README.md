@@ -24,6 +24,10 @@ blr x5
 mov x0, '\n'                  //uart_putc('\n')
 ldr x5, =uart_putc
 blr x5
+
+mov x0, '\r'                  //uart_putc('\r')
+ldr x5, =uart_putc
+blr x5
 ```
 Bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
 
@@ -53,11 +57,24 @@ _print_collatz:
 
 
 
-
 ### Solution sample for this Lab
 ##### QEMU
 ```bash
-qemu-system-aarch64 -M raspi3 -kernel .\7_ISA\output\kernel8.img -serial null -serial stdio
+qemu-system-aarch64 -M raspi3 -k
+ernel .\7_ISA\output\kernel8.img -serial null -serial stdio
+
+GCD(930,180):
+000000000000001E
+
+Collatz Sequence for 21:
+0000000000000015
+0000000000000040
+0000000000000020
+0000000000000010
+0000000000000008
+0000000000000004
+0000000000000002
+0000000000000001
 ```
 ##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/2_Binary_and_Hex/images/lab2_solution.png" width="380"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/7_ISA/images/lab7_solution.png" width="400"/>

@@ -29,7 +29,7 @@ extern uint64_t _arithmetic_gcd( uint64_t, uint64_t );
 void main(){
     uart_init();
 
-    uart_puts( "\nGCD(930,180):\n" );
+    uart_puts( "GCD(930,180):\n" );
     uart_puthex_64_bits( _arithmetic_gcd(930,180) );
 
     uart_puts( "\n\nCollatz Sequence for 21:\n" );
