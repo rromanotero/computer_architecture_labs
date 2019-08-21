@@ -9,7 +9,7 @@ Upon completion of this lab, the student will be able to:
 ### Tasks
 (src/arithmetic.s contains empty subroutines)
 1. (4 pts) Write the assembly routine \_arithmetic_gcd
-2. (2 pts) Go through the disassembly of \_arithmetic_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight the instruction's opcode.
+2. (2 pts) Go through the disassembly of \_arithmetic_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight instruction's opcode, register operands, as well as immediate values.
 3. (4 pts) Write the assembly routine \_arithmetic_print_collatz_sequence. See [Collatz sequence algorithm here](http://mathworld.wolfram.com/CollatzProblem.html).
 
 HINT:
