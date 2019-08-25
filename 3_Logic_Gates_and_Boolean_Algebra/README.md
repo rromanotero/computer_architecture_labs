@@ -4,15 +4,14 @@
 Upon completion of this lab, the student should be able to:
 
 1. Write assembly programs with bitwise ARM instructions
-2. Implement a NAND gate in assembly
-
+2. Implement a HALF added with NAND gates
 
 ### Tasks
 1. (8 pts) Write a program to verify de Morgan's Laws
-1. (2 pts) Write a \_nand subroutine, and use it to simulate a half adder
+1. (2 pts) Write a \_gates_nand subroutine, and use it to simulate a half adder
 
     Hint:
-     - Use .req, it'll make your assembly writing simpler
+     - Use *.req*, it'll make your assembly writing simpler
          - *and x, y* is more intuitive than *and x4, x5*
      - Can't make sense of ARM documentation?
          - Test instructions, observe what they do.
@@ -32,14 +31,14 @@ Upon completion of this lab, the student should be able to:
 ##### QEMU
 ```bash
 qemu-system-aarch64 -M raspi3 -kernel .\3_Logic_Gates_and_Boolean_Algebra\output\kernel8.img -serial null -serial stdio
-        x       |         y       |       (xy)'      |      x' + y'
+        x       |         y       |       (xy)\'      |      x\' + y\'
 -----------------------------------------------------------------------
 0000000000000000  0000000000000000 | 0000000000000001 | 0000000000000001
 0000000000000000  0000000000000001 | 0000000000000001 | 0000000000000001
 0000000000000001  0000000000000000 | 0000000000000001 | 0000000000000001
 0000000000000001  0000000000000001 | 0000000000000000 | 0000000000000000
 
-        x       |         y       |       (x + y)'    |      x'y'
+        x       |         y       |       (x + y)\'    |      x\'y\'
 -------------------------------------------------------------------------
 0000000000000000  0000000000000000 | 0000000000000001 | 0000000000000001
 0000000000000000  0000000000000001 | 0000000000000000 | 0000000000000000
