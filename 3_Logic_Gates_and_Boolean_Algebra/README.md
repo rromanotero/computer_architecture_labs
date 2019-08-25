@@ -53,4 +53,4 @@ qemu-system-aarch64 -M raspi3 -kernel .\3_Logic_Gates_and_Boolean_Algebra\output
 0000000000000001  0000000000000001 | 0000000000000000 | 0000000000000001
 ```
 ##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/3_Logic_Gates_and_Boolean_Algebra/images/lab3_solution.png" width="380"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/3_Logic_Gates_and_Boolean_Algebra/images/lab3_solution.png" width="520"/>
