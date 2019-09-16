@@ -15,8 +15,25 @@ Upon completion of this lab, the student shall be able to:
    - \_bitwise_two_power_nth_64_bits
 
     Hint:
+    - Use CLZ, REV32, BFI, and LSL (Look for them in the documents in Resources on the Web)
+    - In general A64 instructions are similar, they take zero or more operands and do some operation with them. The notation used in ARM's documentation is as follows:
+
+        - Xd---the destination register
+        - Xn---the register holding the first operand
+        - Operand2---a second operand, which can be an immediate value or a register.
+
+        As example consider the Mov Immediate (Constant) instruction, which moves a 16-bit immediate value to a register. Documentation states:
+
+                            MOV <Xd>, #<imm>
+        So to move the immediate (constant) value of 7 to x0 we do:
+
+                            mov x0, 7
+
      - Have a look at main.c as well as the sample output below, you can infer the subroutines above's behaviour from them
-     - Use LSL, CLZ, REV32, and BFI
+     - blr x30 is used to "return" from a subroutine. This is possible since x30 contains
+     the return address.
+     - To "return a value" in a subroutine simply write the returned value to x0, by convention compiled C code will expect it to be there. Try it!
+     - Documentation is difficult to read? Try plugging in values. See what happens!
     Note:
      - Investigating concepts (e.g. endianness) required to write the subroutines above are part of the lab.
 
