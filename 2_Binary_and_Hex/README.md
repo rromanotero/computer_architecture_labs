@@ -8,18 +8,17 @@ Upon completion of this lab, the student shall be able to:
 3. Write basic assembly routines that can be called from C code
 
 ### Tasks
-1. (10 pts) Write the following assembly subroutines:
-   (src/bitwise.s contains empty subroutines)
+1. (10 pts) Write the following assembly subroutines (src/bitwise.s contains empty subroutines):
    - \_bitwise_count_leading_zeroes_binary_64_bits
    - \_bitwise_repeat_byte_64_bits
    - \_bitwise_swap_endianness_64_bits
    - \_bitwise_two_power_nth_64_bits
 
     Hint:
-     - Use LSL, CLZ, REV32, and BFI.
+     - Have a look at main.c as well as the sample output below, you can infer the subroutines above's behaviour from them
+     - Use LSL, CLZ, REV32, and BFI
     Note:
-     - Investigating the concepts (e.g. endianness)
-       required to write the subroutines above are part of the lab.
+     - Investigating concepts (e.g. endianness) required to write the subroutines above are part of the lab.
 
 ### Deliverables
 1. A screenshot of the output from running your solution (matching the output from the solution sample below)
