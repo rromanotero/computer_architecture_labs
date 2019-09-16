@@ -14,6 +14,10 @@ Upon completion of this lab, the student shall be able to:
    - \_bitwise_swap_endianness_64_bits
    - \_bitwise_two_power_nth_64_bits
 
+
+   Note:
+    - Investigating concepts (e.g. endianness) required to write the subroutines above are part of the lab.
+
     Hint:
     - Use CLZ, REV32, BFI, and LSL (Look for them in the documents in Resources on the Web)
     - In general A64 instructions are similar, they take zero or more operands and do some operation with them. The notation used in ARM's documentation is as follows:
@@ -34,8 +38,8 @@ Upon completion of this lab, the student shall be able to:
      the return address.
      - To "return a value" in a subroutine simply write the returned value to x0, by convention compiled C code will expect it to be there. Try it!
      - Documentation is difficult to read? Try plugging in values. See what happens!
-    Note:
-     - Investigating concepts (e.g. endianness) required to write the subroutines above are part of the lab.
+
+
 
 ### Deliverables
 1. A screenshot of the output from running your solution (matching the output from the solution sample below)
