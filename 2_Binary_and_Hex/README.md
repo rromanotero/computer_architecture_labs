@@ -19,6 +19,7 @@ Upon completion of this lab, the student shall be able to:
     - Investigating concepts (e.g. endianness) required to write the subroutines above are part of the lab.
 
     Hint:
+    - Have a look at main.c as well as the sample output below, you can infer the subroutines above's behaviour from them
     - Use CLZ, REV32, BFI, and LSL (Look for them in the documents in Resources on the Web)
     - In general A64 instructions are similar, they take zero or more operands and do some operation with them. The notation used in ARM's documentation is as follows:
 
@@ -33,7 +34,6 @@ Upon completion of this lab, the student shall be able to:
 
                             mov x0, 7
 
-     - Have a look at main.c as well as the sample output below, you can infer the subroutines above's behaviour from them
      - blr x30 is used to "return" from a subroutine. This is possible since x30 contains
      the return address.
      - To "return a value" in a subroutine simply write the returned value to x0, by convention compiled C code will expect it to be there. Try it!
