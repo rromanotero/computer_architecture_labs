@@ -22,7 +22,7 @@ Upon completion of this lab, the student shall be able to:
 
     Hint:
     - **Have a look at main.c as well as the sample output below, you can infer the subroutines above's behaviour from them**
-    - &&Use CLZ, REV32, BFI, and LSL (Look for them in the documents in Resources on the Web)** .
+    - **Use CLZ, REV32, BFI, and LSL (Look for them in the documents in Resources on the Web)** .
     - Before attempting to write any code, think about what these instructions do and how you can use them to write the subroutines above. It might not be so obvious for one or two.
     - In general A64 instructions are similar, they take zero or more operands and do some operation with them. The notation used in ARM's documentation is as follows:
 
