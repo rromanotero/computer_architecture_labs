@@ -4,7 +4,7 @@
 Upon completion of this lab, the student should be able to:
 
 1. Write assembly programs with bitwise ARM instructions
-2. Implement a HALF added with NAND gates
+2. Understand how a HALF adder is implemented with NAND gates
 
 ### Tasks
 1. (8 pts) Write a program to verify de Morgan's Laws

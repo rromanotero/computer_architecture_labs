@@ -85,11 +85,9 @@ void print_line_de_morgan_second_law( uint64_t x, uint64_t y){
 }
 
 void print_line_half_adder( uint64_t x, uint64_t y){
-    uint64_t(*_nand)(uint64_t,uint64_t);
-    _nand = _gates_nand;
 
-    uint64_t sum = 0;     //solution goes here: _nand( _nand( ... )
-    uint64_t carry = 0;   //solution goes here: _nand( _nand( ... )
+    uint64_t sum = 0;     //Solution goes here: _gates_nand( _gates_nand( ... )
+    uint64_t carry = 0;   //Solution goes here: _gates_nand( _gates_nand( ... )
 
     uart_puthex_64_bits(x);
     uart_puts( "  " );
