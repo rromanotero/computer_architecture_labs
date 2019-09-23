@@ -4,7 +4,7 @@
 Upon completion of this lab, the student should be able to:
 
 1. Write assembly programs with bitwise ARM instructions
-2. Explain and verify (using a computer) De'Morgan Laws 
+2. Explain and verify (using a computer) De'Morgan Laws
 3. Explain how a HALF adder is implemented with NAND gates
 
 ### Tasks
@@ -20,8 +20,7 @@ Upon completion of this lab, the student should be able to:
 
 ### Deliverables
 1. A screenshot of the output from running your solution (matching the output from the solution sample below)
-2. de_morgan.s
-3. gates.s
+2. de_morgan.s, gates.s, and main.c
 
 ### Resources on the WEB
 - [ARM A64 Instruction Set Architecture](https://static.docs.arm.com/ddi0596/a/DDI_0596_ARM_a64_instruction_set_architecture.pdf)
