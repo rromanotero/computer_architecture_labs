@@ -8,10 +8,11 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/solution.s contains empty subroutines)
-1. (2 pts) Write the assembly routine \_solution_print_gcd that prints the GCD of two numbers.
-2. (2 pts) Go through the disassembly of \_solution_print_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight instruction's opcode.
-3. (6 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve TWO of the following problems: 1,2,3,4,5,6,7,9,10,12, and 14. Call your subroutines \_print_solution_euler_N, where N is the problem you're solving. Use .req to write more readable assembly for full marks.
+1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR of the following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 14, and 20
 
+To write readable assembly .req, use indentation, and add comments where necessary for full marks.
+
+2. (2 pts) Go through the disassembly of one of your solutions (in output/kernel8.lss) and manually translate every one of its instruction to binary. In the translation, highlight instruction's opcode.
 
 NOTES:
 - Only edit solution.s. Think of main as a test case that will call your solution.
@@ -37,9 +38,22 @@ mov x0, '\r'                  //uart_putc('\r')
 ldr x5, =uart_putc
 blr x5
 ```
+Bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
+
+```asm
+.global _subroutine
+_subroutine:
+    str	x30, [sp, #-16]!     //push ret address
+
+    // solution
+    // here...
+
+    ldr	x30, [sp], #16        //pop ret address
+    blr x30                   //return
+```
 
 ### Deliverables
-1. A screenshot of the output from running your solution (matching the output from the solution sample below)
+1. A screenshot of the output from running your solution
 2. A screenshot of the translated binary of \_solution_gcd
 2. solution.s
 
@@ -49,14 +63,3 @@ blr x5
 - [The A64 Instruction Set](https://static.docs.arm.com/100898/0100/the_a64_Instruction_set_100898_0100.pdf)
 - [ARMv8 A64 Quick Reference](https://courses.cs.washington.edu/courses/cse469/18wi/Materials/arm64.pdf)
 - [ARM Architecture Reference Manual](https://static.docs.arm.com/ddi0487/ea/DDI0487E_a_armv8_arm.pdf?_ga=2.204759571.2043138464.1566012116-96909423.1563002005)
-
-
-### Solution sample for this Lab
-##### QEMU
-```bash
-qemu-system-aarch64 -M raspi3 -kernel .\4_ISA\output\kernel8.img -serial null -serial stdio
-GCD(930,180):
-000000000000001E
-```
-##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/4_ISA/images/lab_solution.png" width="300"/>
