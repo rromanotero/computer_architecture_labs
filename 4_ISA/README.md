@@ -6,7 +6,7 @@ Upon completion of this lab, the student will be able to:
 1. Write assembly that uses arithmetic instructions, conditional branching, and loops.
 2. Disassemble machine code that uses common instructions such as B, MOV, and ADD, and identify their opcode.
 
-### Tasks (part one)
+### Tasks
 (src/solution.s contains empty subroutines)
 1. (4 pts) Write the assembly routine \_print_solution_gcd
 2. (2 pts) Go through the disassembly of \_print_solution_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight instruction's opcode.
