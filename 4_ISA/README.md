@@ -8,9 +8,9 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/solution.s contains empty subroutines)
-1. (4 pts) Write the assembly routine \_solution_print_gcd that prints the GCD of two numbers.
+1. (2 pts) Write the assembly routine \_solution_print_gcd that prints the GCD of two numbers.
 2. (2 pts) Go through the disassembly of \_solution_print_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight instruction's opcode.
-3. (4 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve any of the following problems: 1,2,3,4,5,6,7,9,10,12, and 14. Call the subroutine \_print_solution_euler_N, where N is the problem you're solving. Use .req to write more readable assembly for full marks.
+3. (6 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve TWO of the following problems: 1,2,3,4,5,6,7,9,10,12, and 14. Call your subroutines \_print_solution_euler_N, where N is the problem you're solving. Use .req to write more readable assembly for full marks.
 
 
 NOTES:
