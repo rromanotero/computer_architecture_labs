@@ -33,10 +33,6 @@ blr x5
 mov x0, '\n'                  //uart_putc('\n')
 ldr x5, =uart_putc
 blr x5
-
-mov x0, '\r'                  //uart_putc('\r')
-ldr x5, =uart_putc
-blr x5
 ```
 Bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
 
