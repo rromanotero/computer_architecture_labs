@@ -33,7 +33,7 @@ blr x5
 ```
 BLR is branch register with link. It'll branch to the address in a given register, but before doing so it'll store the return address (the address of the instruction right after blr) in the link register (x30), so the callee subroutine can branch back (return back) to the caller function (i.e. where it left off).
 
-- If you're printing from assembly (i.e. using BLR!), bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
+- If you're printing from assembly (i.e. using BLR!), bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten (Was the a return address in x30? Yes, main called your solution subroutine with BLR! Go check the dissassembly output/kernel8.lss). So you will need to store it on subroutine entry and restore it right before returning like this:
 
 ```asm
 .global _subroutine
