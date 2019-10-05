@@ -8,7 +8,7 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/solution.s contains empty subroutines)
-1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR from following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, and 14. To write readable assembly use .req, use indentation, and add comments where necessary for full marks. Also, edit A, B, C, and D to match
+1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR from following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, and 14. To write readable assembly use .req, use indentation, and add comments where necessary for full marks.
 
 2. (2 pts) Go through the disassembly of one of your solutions (in output/kernel8.lss) and manually translate every one of its instruction to binary. In the translation, highlight instruction's opcode.
 
@@ -49,7 +49,7 @@ _subroutine:
 ### Deliverables
 1. solution.s
 2. A screenshot of the output from running your solution
-    - **In main.c make sure to replace the message printed as "Answer to Problem A/B/C/D" for the actual number of the problem you solved, e.g. "Answer to Problem 14"** 
+    - **In main.c make sure to replace the message printed as "Answer to Problem A/B/C/D" for the actual number of the problem you solved, e.g. "Answer to Problem 14"**
 3. A screenshot of the translated binary of \_solution_gcd
 
 
