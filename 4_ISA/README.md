@@ -22,7 +22,6 @@ HINT:
 - Do not use x0-x18 to keep intermediate states of a computation when doing functions calls. Use x19-x28. Why? When you do a function call (e.g. when you call uart_puthex_64_bits) registers may get modified (other functions need to use registers as well). The [Procedure Call Standard for the AARCH64](http://infocenter.arm.com/help/topic/com.arm.doc.ihi0055b/IHI0055B_aapcs64.pdf) (pg. 14 and 15) states that callee functions must preserve register x19-28. Meaning you can be sure that your register x21 will have the exact same content before and after a function call (it won't get corrupted).
 
 - To print from assembly use:
-(BLR is branch register with link. It'll branch to the address in a given register, but before doing so it'll store the return address (the instruction right after blr) in the link register, so the callee subroutine can branch back (return back) to the caller function (i.e. where it left off))
 ```asm
 mov x0, 7                     //uart_puthex_64_bits(7)
 ldr x5, =uart_puthex_64_bits
@@ -32,7 +31,9 @@ mov x0, '\n'                  //uart_putc('\n')
 ldr x5, =uart_putc
 blr x5
 ```
-Bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
+BLR is branch register with link. It'll branch to the address in a given register, but before doing so it'll store the return address (the address of the instruction right after blr) in the link register (x30), so the callee subroutine can branch back (return back) to the caller function (i.e. where it left off).
+
+If you're printing from assembly (i.e. using BLR!), bare in mind that calling a subroutine with blr means the current ``return address" in x30 will get overwritten. So you will need to store it on subroutine entry and restore it on subroutine return like this:
 
 ```asm
 .global _subroutine
