@@ -1,4 +1,4 @@
-# Lab 5 - ISA
+# Lab 4 - ISA
 
 ### Objectives
 Upon completion of this lab, the student will be able to:
@@ -57,7 +57,7 @@ _print_collatz:
 ### Solution sample for this Lab
 ##### QEMU
 ```bash
-qemu-system-aarch64 -M raspi3 -kernel .\7_ISA\output\kernel8.img -serial null -serial stdio
+qemu-system-aarch64 -M raspi3 -kernel .\4_ISA\output\kernel8.img -serial null -serial stdio
 GCD(930,180):
 000000000000001E
 
@@ -72,4 +72,4 @@ Collatz Sequence for 21:
 0000000000000001
 ```
 ##### PI 3
-  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/5_ISA/images/lab7_solution.png" width="300"/>
+  <img src="https://github.com/rromanotero/computer_architecture_labs/blob/master/4_ISA/images/lab_solution.png" width="300"/>
