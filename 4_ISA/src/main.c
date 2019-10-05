@@ -22,6 +22,9 @@
 #include <stdint.h>
 #include "uart.h"
 
+extern void _print_solution_euler_A(void);
+extern void _print_solution_euler_B(void);
+extern void _print_solution_euler_C(void);
 extern void _print_solution_euler_D(void);
 
 void main(){
