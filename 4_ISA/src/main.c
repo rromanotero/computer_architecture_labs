@@ -29,6 +29,34 @@ extern uint64_t _arithmetic_gcd( uint64_t, uint64_t );
 void main(){
     uart_init();
 
+    uint64_t next_triangle=0;
+    uint64_t count=0;
+    uint64_t num_of_divs=0;
+    while(1){
+        next_triangle+=count;
+
+        num_of_divs=0;
+        for(uint64_t i=1; i<=next_triangle; i++){
+            if( (next_triangle) % i == 0 )
+                num_of_divs++;
+        }
+
+         if( num_of_divs>=190 ){
+            uart_puthex_64_bits( next_triangle );
+            uart_puts( "\n" );
+            uart_puthex_64_bits( num_of_divs );
+            uart_puts( "\n" );
+        }
+        if(num_of_divs>=500){
+            break;
+        }
+
+
+        count++;
+    }
+
+
+
     uart_puts( "GCD(930,180):\n" );
     uart_puthex_64_bits( _arithmetic_gcd(930,180) );
 
