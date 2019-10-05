@@ -8,9 +8,7 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/solution.s contains empty subroutines)
-1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR of the following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 14, and 20
-
-To write readable assembly .req, use indentation, and add comments where necessary for full marks.
+1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR from following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 14, and 20. To write readable assembly .req, use indentation, and add comments where necessary for full marks.
 
 2. (2 pts) Go through the disassembly of one of your solutions (in output/kernel8.lss) and manually translate every one of its instruction to binary. In the translation, highlight instruction's opcode.
 
