@@ -27,9 +27,13 @@ extern void _print_solution_euler_D(void);
 void main(){
     uart_init();
 
+    uart_puts( "Answer to problem A:\n" );
     _print_solution_euler_A();
+    uart_puts( "Answer to problem B:\n" );
     _print_solution_euler_B();
+    uart_puts( "Answer to problem C:\n" );
     _print_solution_euler_C();
+    uart_puts( "Answer to problem D:\n" );
     _print_solution_euler_D();
 
     while(1);

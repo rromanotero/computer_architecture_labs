@@ -8,13 +8,12 @@ Upon completion of this lab, the student will be able to:
 
 ### Tasks
 (src/solution.s contains empty subroutines)
-1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR from following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 14, and 20. To write readable assembly use .req, use indentation, and add comments where necessary for full marks.
+1. (8 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve FOUR from following problems: 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, and 14. To write readable assembly use .req, use indentation, and add comments where necessary for full marks. Also, edit A, B, C, and D to match
 
 2. (2 pts) Go through the disassembly of one of your solutions (in output/kernel8.lss) and manually translate every one of its instruction to binary. In the translation, highlight instruction's opcode.
 
 NOTES:
-- Only edit solution.s. Think of main as a test case that will call your solution.
-- You can verify your answers by signing in to Project Euler and submitting your answer.
+- You can verify your answers by signing up to Project Euler and submitting your answers.
 - For problem 12 you can do 160 divisors, since 500 may take too long to compute (feel free to do 500).
 - Opcodes are in [ARM A64 Instruction Set Architecture](https://static.docs.arm.com/ddi0596/a/DDI_0596_ARM_a64_instruction_set_architecture.pdf)
 
@@ -48,9 +47,10 @@ _subroutine:
 ```
 
 ### Deliverables
-1. A screenshot of the output from running your solution
-2. A screenshot of the translated binary of \_solution_gcd
-2. solution.s
+1. solution.s
+2. A screenshot of the output from running your solution
+    - **In main.c make sure to replace the A/B/C/D for the actual number of the problem you solved, so the output prints "Answer to Problem 14", for instance (instead of A,B,C or D)** 
+3. A screenshot of the translated binary of \_solution_gcd
 
 
 ### Resources on the WEB

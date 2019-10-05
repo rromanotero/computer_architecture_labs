@@ -45,7 +45,7 @@ _print_solution_euler_B:
     // ...
 
     //this prints an 8 + a newline (just an example)
-    mov x0, 8                     //uart_puthex_64_bits(7)
+    mov x0, 8                     //uart_puthex_64_bits(8)
     ldr x5, =uart_puthex_64_bits
     blr x5
 
@@ -75,8 +75,8 @@ _print_solution_euler_C:
     // ...
 
     //this prints a 9 + a newline (just an example)
-    mov x0, 'y'                     //uart_putc('y')
-    ldr x5, =uart_putc
+    mov x0, 9                     //uart_puthex_64_bits(9)
+    ldr x5, =uart_puthex_64_bits
     blr x5
 
     mov x0, '\n'                  //uart_putc('\n')
@@ -104,9 +104,9 @@ _print_solution_euler_D:
     // here
     // ...
 
-    //this prints a 'w' + a newline (just an example)
-    mov x0, 'w'                    //uart_putc('w')
-    ldr x5, =uart_putc
+    //this prints a 10 + a newline (just an example)
+    mov x0, 10                     //uart_puthex_64_bits(10)
+    ldr x5, =uart_puthex_64_bits
     blr x5
 
     mov x0, '\n'                  //uart_putc('\n')
