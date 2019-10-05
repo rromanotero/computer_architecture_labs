@@ -12,10 +12,12 @@ Upon completion of this lab, the student will be able to:
 2. (2 pts) Go through the disassembly of \_solution_print_gcd (in output/kernel8.lss) and manually translate every instruction to binary. In the translation, highlight instruction's opcode.
 3. (4 pts) Check [Project Euler Archives](https://www.projecteuler.net/archives), and solve any of the following problems: 1,2,3,4,5,6,7,9,10,12, and 14. Call the subroutine \_print_solution_euler_N, where N is the problem you're solving. Use .req to write more readable assembly for full marks.
 
+
 NOTE:
-    - You can verify your answers to Project Euler problems by signing in to Project Euler and submitting your answer.
-    - For problem 12 you can do 160 divisors, since 500 may take too long to compute (feel free to do 500).
-    - Opcode are in [ARM A64 Instruction Set Architecture](https://static.docs.arm.com/ddi0596/a/DDI_0596_ARM_a64_instruction_set_architecture.pdf)
+- Only edit solution.s. Think of main as a test case that will call your solution. 
+- You can verify your answers to Project Euler problems by signing in to Project Euler and submitting your answer.
+- For problem 12 you can do 160 divisors, since 500 may take too long to compute (feel free to do 500).
+- Opcode are in [ARM A64 Instruction Set Architecture](https://static.docs.arm.com/ddi0596/a/DDI_0596_ARM_a64_instruction_set_architecture.pdf)
 
 HINT:
 - Do not use x0-x18 to keep intermediate states of a computation. Use x19-x28. Why? When you do a function call (e.g. when you call uart_puthex_64_bits) registers may get modified (other functions need to use registers as well). The [http://infocenter.arm.com/help/topic/com.arm.doc.ihi0055b/IHI0055B_aapcs64.pdf](Procedure Call Standard for the AARCH64) (pg. 14 and 15) states that callee functions must preserve register x19-28. Meaning you can be sure that your register x21 will have the exact same content before and after a function call (it won't get corrupted).
