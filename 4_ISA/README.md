@@ -50,7 +50,7 @@ _subroutine:
 1. solution.s
 2. A screenshot of the output from running your solution
     - **In main.c make sure to replace the message printed as "Answer to Problem A/B/C/D" for the actual number of the problem you solved, e.g. "Answer to Problem 14"**
-3. A screenshot of the translated binary of \_solution_gcd
+3. A screenshot of the translated binary of one of your solutions
 
 
 ### Resources on the WEB
