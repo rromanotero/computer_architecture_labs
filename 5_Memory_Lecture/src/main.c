@@ -24,12 +24,20 @@
 #include "kprintf.h"
 
 extern uint32_t _test(void);
+extern void _test2(void);
+
+extern uint32_t* fb;
 
 void main(){
 
 	system_init();
 
-	kprintf( "Test returned: %x", _test() );
+	kprintf( "Test returned: %d", _test() );
+	_test2();
+
+	//Draw some pixels red
+	//for(uint32_t i=0; i<700; i++)
+	//	*(fb + i) = 0x000000FF;
 
 }
 

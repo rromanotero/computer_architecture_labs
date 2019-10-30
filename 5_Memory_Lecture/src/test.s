@@ -1,10 +1,11 @@
 .align 2
 .section .text
 
+
 .global _test
 _test:
     /*
-    *   Variables in AARCH64 Demo
+    *   Reading variables in AARCH64 Demo (Test)
     */
 
     //read var as a word
@@ -67,3 +68,36 @@ b:
 
 my_string:
 .ascii "hello!"
+
+
+
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
+.align 2
+.section .text
+
+.global _test2
+_test2:
+    /*
+    *   Writing to Memory Demo (Test2)
+    */
+    mov x0, 0                  //Counter
+    ldr w1, =0xFF              //Red
+
+    ldr x2, =0x3C100000        //fb
+
+    //Can also grab the address from fb
+    //(Actually it's better this way since fb  may change)
+    //ldr x2, fb              //address where fb is. So x2=fb
+    //ldr x2, [x2]            //address of fb.       So x2=*fb
+loop:
+    str w1, [x2], 4          //Pixel size is 400
+
+    add x0, x0, 1
+    cmp x0, 700
+    ble loop
+
+    mov x0, x2
+    ret
