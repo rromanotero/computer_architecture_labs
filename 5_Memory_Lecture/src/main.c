@@ -33,11 +33,7 @@ void main(){
 	system_init();
 
 	kprintf( "Test returned: %d", _test() );
-	_test2();
-
-	//Draw some pixels red
-	//for(uint32_t i=0; i<700; i++)
-	//	*(fb + i) = 0x000000FF;
+	//_test2();
 
 }
 
