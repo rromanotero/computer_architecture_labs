@@ -1,6 +1,6 @@
 /**
-*   This file is part of computer_architecture_labs
-*   (https://github.com/rromanotero/computer_architecture_labs).
+*   This file is part of os_labs
+*   (https://github.com/rromanotero/os_labs).
 *
 *   Copyright (c) 2019 Rafael Roman Otero.
 *
@@ -20,24 +20,17 @@
 **/
 
 #include <stdint.h>
-#include "uart.h"
+#include "system.h"
+#include "kprintf.h"
 
-extern void _print_solution_euler_A(void);
-extern void _print_solution_euler_B(void);
-extern void _print_solution_euler_C(void);
-extern void _print_solution_euler_D(void);
+extern uint32_t _test(void);
 
 void main(){
-    uart_init();
 
-    uart_puts( "Answer to problem A:\n" );
-    _print_solution_euler_A();
-    // uart_puts( "Answer to problem B:\n" );
-    // _print_solution_euler_B();
-    // uart_puts( "Answer to problem C:\n" );
-    // _print_solution_euler_C();
-    // uart_puts( "Answer to problem D:\n" );
-    // _print_solution_euler_D();
+	system_init();
 
-    while(1);
+	kprintf( "Test returned: %x", _test() );
+
 }
+
+////////////////////////////////////////////////////////////////////

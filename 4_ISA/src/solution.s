@@ -12,14 +12,34 @@ _print_solution_euler_A:
     str	x30, [sp, #-16]!     //push ret address
 
 
-    // solution
-    // here
-    // ...
+    mov x19, 0
+loop:
+    mov x20, 7
 
-    //this prints a 7 + a newline (just an example)
-    mov x0, 7                     //uart_puthex_64_bits(7)
+    mov x21, x19
+    udiv x19, x19, x20
+    mul x19, x19, x20
+    sub x19, x21, x19
+
+    cmp x19, 0
+    bne endif
+
+    mov x0, x21           //uart_puthex_64_bits(x21)
     ldr x5, =uart_puthex_64_bits
     blr x5
+
+    mov x0, '\n'
+    ldr x5, =uart_putc    //uart_putc('\n')
+    blr x5
+
+endif:
+    mov x19, x21
+    add x19, x19, 1
+    b loop
+
+
+
+
 
     mov x0, '\n'                  //uart_putc('\n')
     ldr x5, =uart_putc

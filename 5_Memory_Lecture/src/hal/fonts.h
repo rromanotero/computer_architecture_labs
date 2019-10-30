@@ -1,6 +1,6 @@
 /**
-*   This file is part of computer_architecture_labs
-*   (https://github.com/rromanotero/computer_architecture_labs).
+*   This file is part of os_labs
+*   (https://github.com/rromanotero/os_labs).
 *
 *   Copyright (c) 2019 Rafael Roman Otero.
 *
@@ -19,25 +19,19 @@
 *
 **/
 
-#include <stdint.h>
-#include "uart.h"
+#ifndef FONTS_H
+#define FONTS_H
 
-extern void _print_solution_euler_A(void);
-extern void _print_solution_euler_B(void);
-extern void _print_solution_euler_C(void);
-extern void _print_solution_euler_D(void);
+#include <stdbool.h>
+#include "hal.h"
 
-void main(){
-    uart_init();
 
-    uart_puts( "Answer to problem A:\n" );
-    _print_solution_euler_A();
-    // uart_puts( "Answer to problem B:\n" );
-    // _print_solution_euler_B();
-    // uart_puts( "Answer to problem C:\n" );
-    // _print_solution_euler_C();
-    // uart_puts( "Answer to problem D:\n" );
-    // _print_solution_euler_D();
+typedef struct{
+  uint32_t num_lines;
+  VideoLine lines[6];
+}VideoFont;
 
-    while(1);
-}
+void fonts_init(void);
+VideoFont* fonts_char_to_font(uint8_t);
+
+#endif

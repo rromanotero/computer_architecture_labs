@@ -1,6 +1,6 @@
 /**
-*   This file is part of computer_architecture_labs
-*   (https://github.com/rromanotero/computer_architecture_labs).
+*   This file is part of os_labs
+*   (https://github.com/rromanotero/os_labs).
 *
 *   Copyright (c) 2019 Rafael Roman Otero.
 *
@@ -18,26 +18,16 @@
 *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *
 **/
-
 #include <stdint.h>
-#include "uart.h"
+#include "delays.h"
 
-extern void _print_solution_euler_A(void);
-extern void _print_solution_euler_B(void);
-extern void _print_solution_euler_C(void);
-extern void _print_solution_euler_D(void);
-
-void main(){
-    uart_init();
-
-    uart_puts( "Answer to problem A:\n" );
-    _print_solution_euler_A();
-    // uart_puts( "Answer to problem B:\n" );
-    // _print_solution_euler_B();
-    // uart_puts( "Answer to problem C:\n" );
-    // _print_solution_euler_C();
-    // uart_puts( "Answer to problem D:\n" );
-    // _print_solution_euler_D();
-
-    while(1);
+/**
+*	CPU Delays
+*
+*	Busy-waiting delay
+*
+*	@param delay_in_ms delay in milliseconds
+*/
+void hal_cpu_delay(uint32_t delay_in_ms){
+	delays_wait_microsecs(delay_in_ms*1000);
 }
