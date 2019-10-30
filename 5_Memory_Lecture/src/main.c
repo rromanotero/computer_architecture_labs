@@ -21,7 +21,7 @@
 
 #include <stdint.h>
 #include "system.h"
-#include "kprintf.h"
+#include "kprintf/kprintf.h"
 
 extern uint32_t _test(void);
 extern void _test2(void);

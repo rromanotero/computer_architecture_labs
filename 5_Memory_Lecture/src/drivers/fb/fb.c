@@ -43,9 +43,9 @@
  * DEALINGS IN THE SOFTWARE.
  *
  */
-#include "mbox.h"
+#include "../mbox/mbox.h"
 #include "fb.h"
-#include "system.h"
+#include "../../system.h"
 
 static unsigned int width, height, pitch;
 static uint32_t *fb;  //The framebuffer

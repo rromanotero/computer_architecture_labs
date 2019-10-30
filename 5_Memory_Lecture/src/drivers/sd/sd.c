@@ -45,10 +45,10 @@
  *
  */
 
-#include "gpio.h"
-#include "kprintf.h"
-#include "delays.h"
-#include "sd.h"
+#include "../gpio/gpio.h"
+#include "../../kprintf/kprintf.h"
+#include "../delays/delays.h"
+#include "../sd/sd.h"
 
 #define EMMC_ARG2           ((volatile unsigned int*)(MMIO_BASE+0x00300000))
 #define EMMC_BLKSIZECNT     ((volatile unsigned int*)(MMIO_BASE+0x00300004))

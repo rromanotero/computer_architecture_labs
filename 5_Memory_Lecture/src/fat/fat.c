@@ -60,9 +60,9 @@ size_t strlen(const char * str)
 }
 
 
-#include "hal.h"
+#include "../hal/hal.h"
 #include "fat.h"
-#include "kprintf.h"
+#include "../kprintf/kprintf.h"
 
 #define FAT_BYTES_PER_FAT_ENTRY                     4
 #define FAT_END_OF_CHAIN_MARKER                     0x0FFFFFFF

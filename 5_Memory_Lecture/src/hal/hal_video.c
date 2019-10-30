@@ -23,7 +23,7 @@
 #include <stdbool.h>
 #include "hal.h"
 #include "fonts.h"
-#include "fb.h"
+#include "../drivers/fb/fb.h"
 
 void _hal_video_put_byte_raw(uint32_t raw_linear_position, uint8_t);
 
