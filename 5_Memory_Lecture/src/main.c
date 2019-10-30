@@ -33,7 +33,7 @@ void main(){
 	system_init();
 
 	kprintf( "Test returned: %d", _test() );
-	//_test2();
+	_test2();
 
 }
 
